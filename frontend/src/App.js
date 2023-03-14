@@ -77,6 +77,7 @@ const App = () => {
         setTimeout(() => {
           setMessage(null);
         }, 5000);
+        setPersons(persons.filter((person) => person.id !== foundPerson[0].id));
       }
     }
     setNewName('');
